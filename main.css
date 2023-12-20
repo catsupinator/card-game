@@ -1,0 +1,254 @@
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30;
+}
+
+.card > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 8px;
+    padding-left: 4px;
+}
+
+.flop {
+    background-color: hotpink;
+    height: 0px;
+    width: 0px;
+    color: transparent;
+}
+
+#turn {
+    background-color: blue;
+    height: 0;
+    width: 0;
+    color: transparent;
+}
+
+#river {
+    background-color: yellow;
+    height: 0;
+    width: 0;
+    color: transparent;
+}
+
+#flop-button {
+    position: fixed;
+    bottom: 200px;
+    left: calc(50% + 164px);
+    margin-left: 8px;
+}
+
+#testing {
+    position: fixed;
+    bottom: 180px;
+    left: calc(50% + 164px);
+    margin-top: 50px;
+}
+
+#turn-button {
+    position: fixed;
+    left: -64px;
+    bottom: 200px;
+    margin-left: 8px;
+}
+
+#river-button {
+    position: fixed;
+    left: -64px;
+    bottom: 200px;
+    margin-left: 8px;
+}
+
+body[data-flop="true"] > .card > .flop {
+    height: 210px;
+    width: 150px;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+body[data-flop="true"] > #flop-button {
+    position: fixed;
+    left: -64px;
+}
+
+body[data-flop="true"] > #turn-button {
+    left: calc(50% + 164px);
+}
+
+body[data-turn="true"] > .card > #turn {
+    height: 210px;
+    width: 150px;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+body[data-turn="true"] > #turn-button {
+    left: -64px;
+}
+
+body[data-turn="true"] > #river-button {
+    left: calc(50% + 164px);
+}
+
+body[data-river="true"] > .card > #river {
+    height: 210px;
+    width: 150px;
+    color: black;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 8px;
+    gap: 8px;
+    margin-left: calc(50% - 181px);
+    font-family: 'Verdana', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30;
+}
+
+.hand > div {
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 4px;
+}
+
+#hand-1 {
+    height: 210px;
+    width: 150px;
+    color: black;
+}
+
+#hand-2 {
+    height: 210px;
+    width: 150px;
+    color: black;
+}
+
+#hand-1[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#hand-1[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#hand-1[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#hand-1[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#hand-2[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#hand-2[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#hand-2[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#hand-2[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#flop-1[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#flop-1[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#flop-1[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#flop-1[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#flop-2[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#flop-2[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#flop-2[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#flop-2[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#flop-3[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#flop-3[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#flop-3[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#flop-3[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#turn[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#turn[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#turn[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#turn[data-suit="Clubs"] {
+    background-color: purple;
+}
+
+#river[data-suit="Diamonds"] {
+    background-color: orange;
+}
+
+#river[data-suit="Hearts"] {
+    background-color: red;
+}
+
+#river[data-suit="Spades"] {
+    background-color: blue;
+}
+
+#river[data-suit="Clubs"] {
+    background-color: purple;
+}
